@@ -1,3 +1,10 @@
+/*!
+ * Copyright © 2022 United States Government as represented by the Administrator
+ * of the National Aeronautics and Space Administration. No copyright is claimed
+ * in the United States under Title 17, U.S. Code. All Other Rights Reserved.
+ *
+ * SPDX-License-Identifier: NASA-1.3
+ */
 
 import {visit} from 'unist-util-visit'
 import {is} from 'unist-util-is'
@@ -12,8 +19,7 @@ export default function astroFlavor(){
             children.forEach((child) => {
                 const matches = parseISO8601Time(child['value'])
                 if (is(child, 'text') && matches) {
-                    //console.log(child, parseISO8601Time(child['value']))
-                    child['value'] = child['value'].replace(matches[0], 'Did this work?')
+                    child['value'] = child['value'].replace(matches[0], `<strong>${matches[0]}</strong>`)
                 }
             });
         })
