@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/nasa-gcn/Astro-Flavored-Markdown#readme",
   "dependencies": {
+    "prettier": "^2.8.1",
     "unist-util-is": "^5.1.1",
     "unist-util-visit": "^4.1.1"
   }
