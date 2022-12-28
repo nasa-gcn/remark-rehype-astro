@@ -1,0 +1,25 @@
+{
+  "name": "astro-flavored-markdown",
+  "version": "1.0.0",
+  "description": "A remark markdown dialect for astronomical bulletins",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nasa-gcn/Astro-Flavored-Markdown.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/nasa-gcn/Astro-Flavored-Markdown/issues"
+  },
+  "homepage": "https://github.com/nasa-gcn/Astro-Flavored-Markdown#readme",
+  "dependencies": {
+    "unist-util-is": "^5.1.1",
+    "unist-util-visit": "^4.1.1"
+  }
+}
