@@ -7,29 +7,26 @@
  */
 
 import { visit } from "unist-util-visit";
-import { is } from "unist-util-is";
 
-// Plugin
-export default function astroFlavor() {
+export default function plugin() {
   // transformer
-  return (tree, file) => {
-    visit(tree, "paragraph", (node) => {
-      const children = node.children;
-      children.forEach((child) => {
-        const matches = parseISO8601Time(child["value"]);
-        if (is(child, "text") && matches) {
-          child["value"] = child["value"].replace(
-            matches[0],
-            `<strong>${matches[0]}</strong>`
-          );
-        }
-      });
+  return (tree) => {
+    visit(tree, "text", (node) => {
+      const matches = parseISO8601Time(node.value);
+      if (matches) {
+        console.log(matches);
+        node.value = node.value.replaceAll(
+          matches[0],
+          `<strong>${matches[0]}</strong>`
+        );
+      }
     });
   };
-}
-export function parseISO8601Time(stringValue) {
-  // hh:mm:ss[.sss][+-hh:mm]
-  const pattern =
-    /([0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9])?(Z|([+-][0-9]{2}:[0-9]{2}))?)/;
-  return pattern.exec(stringValue);
+
+  function parseISO8601Time(stringValue) {
+    // hh:mm:ss[.sss][+-hh:mm]
+    const pattern =
+      /([0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9])?(Z|([+-][0-9]{2}:[0-9]{2}))?)/;
+    return pattern.exec(stringValue);
+  }
 }
