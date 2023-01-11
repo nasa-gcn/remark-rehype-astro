@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "include": ["src/*"],
+  "exclude": ["**/test.ts"],
+  "compilerOptions": {
+    "declaration": true,
+    "module": "NodeNext",
+    "outDir": "."
+  }
+}
