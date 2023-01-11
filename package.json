@@ -46,7 +46,24 @@
   },
   "jest": {
     "preset": "ts-jest",
+    "extensionsToTreatAsEsm": [
+      ".ts"
+    ],
     "collectCoverage": true,
-    "coverageReporters": ["text", "cobertura"]
+    "coverageReporters": [
+      "text",
+      "cobertura"
+    ],
+    "moduleNameMapper": {
+      "^(\\.{1,2}/.*)\\.js$": "$1"
+    },
+    "transform": {
+      "^.+\\.tsx?$": [
+        "ts-jest",
+        {
+          "useESM": true
+        }
+      ]
+    }
   }
 }
