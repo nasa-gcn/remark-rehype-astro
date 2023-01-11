@@ -20,7 +20,14 @@
   "homepage": "https://github.com/nasa-gcn/Astro-Flavored-Markdown#readme",
   "dependencies": {
     "prettier": "^2.8.1",
+    "rehype-stringify": "^9.0.3",
+    "remark-parse": "^10.0.1",
+    "remark-rehype": "^10.1.0",
+    "retext": "^8.1.0",
+    "unified": "^10.1.2",
+    "unist-util-flatmap": "^1.0.0",
     "unist-util-is": "^5.1.1",
+    "unist-util-map": "^3.1.2",
     "unist-util-visit": "^4.1.1"
   }
 }

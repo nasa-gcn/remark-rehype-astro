@@ -11,13 +11,6 @@ import { visit } from "unist-util-visit";
 export default function plugin() {
   // transformer
   return (tree) => {
-    visit(tree, "element", (node) => {
-      const matches = parseISO8601Time(node.value);
-      if (matches) {
-        node = buildNewTree(node, matches);
-      }
-    });
-
     visit(tree, "text", (node) => {
       const matches = parseISO8601Time(node.value);
       if (matches) {
@@ -47,7 +40,6 @@ export default function plugin() {
         },
       },
     };
-    console.log(baseNode);
     return baseNode;
   }
 
