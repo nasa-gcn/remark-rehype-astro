@@ -6,25 +6,25 @@
  * SPDX-License-Identifier: NASA-1.3
  */
 
-import { visit } from "unist-util-visit";
+import { visit } from 'unist-util-visit'
 
 export default function plugin() {
   // transformer
   return (tree) => {
-    visit(tree, "text", (node) => {
-      const matches = parseISO8601Time(node.value);
+    visit(tree, 'text', (node) => {
+      const matches = parseISO8601Time(node.value)
       if (matches) {
-        node = buildNewTree(node, matches);
+        node = buildNewTree(node, matches)
       }
-    });
-  };
+    })
+  }
 
   function buildNewTree(node, matches) {
-    console.log(node);
-    const childrenNodes = parseNewNodes(node, matches);
+    console.log(node)
+    const childrenNodes = parseNewNodes(node, matches)
     const baseNode = {
-      type: "element",
-      tagName: "p",
+      type: 'element',
+      tagName: 'p',
       properties: {},
       children: childrenNodes,
       position: {
@@ -39,32 +39,32 @@ export default function plugin() {
           offset: node.position.end.column,
         },
       },
-    };
-    return baseNode;
+    }
+    return baseNode
   }
 
   function parseISO8601Time(stringValue) {
     // hh:mm:ss[.sss][+-hh:mm]
     const pattern =
-      /([0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9])?(Z|([+-][0-9]{2}:[0-9]{2}))?)/g;
-    return pattern.exec(stringValue);
+      /([0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9])?(Z|([+-][0-9]{2}:[0-9]{2}))?)/g
+    return pattern.exec(stringValue)
   }
 
   function parseNewNodes(baseNode, matches) {
-    let startNode = JSON.parse(JSON.stringify(baseNode));
-    startNode.value = startNode.value.substring(0, matches.index);
+    let startNode = JSON.parse(JSON.stringify(baseNode))
+    startNode.value = startNode.value.substring(0, matches.index)
     startNode.position.end.column =
-      startNode.position.start.column + startNode.value.length;
+      startNode.position.start.column + startNode.value.length
     startNode.position.end.offset =
-      startNode.position.start.offset + startNode.value.length;
+      startNode.position.start.offset + startNode.value.length
 
     let mainNode = {
-      type: "element",
-      tagName: "strong",
+      type: 'element',
+      tagName: 'strong',
       properties: {},
       children: [
         {
-          type: "text",
+          type: 'text',
           value: matches[0],
           position: {
             start: {
@@ -92,17 +92,17 @@ export default function plugin() {
           offset: startNode.position.end.column + matches[0].length,
         },
       },
-    };
+    }
 
-    let endNode = JSON.parse(JSON.stringify(baseNode));
-    const endNodeStartPosition = matches.index + matches[0].length;
+    let endNode = JSON.parse(JSON.stringify(baseNode))
+    const endNodeStartPosition = matches.index + matches[0].length
     endNode.value = endNode.value.substring(
       endNodeStartPosition,
       endNode.value.length
-    );
-    endNode.position.start.column = endNodeStartPosition;
-    endNode.position.start.offset = endNodeStartPosition;
+    )
+    endNode.position.start.column = endNodeStartPosition
+    endNode.position.start.offset = endNodeStartPosition
 
-    return [startNode, mainNode, endNode];
+    return [startNode, mainNode, endNode]
   }
 }

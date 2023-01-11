@@ -8,21 +8,30 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nasa-gcn/Astro-Flavored-Markdown.git"
+    "url": "github:nasa-gcn/astro-flavored-markdown"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module",
-  "bugs": {
-    "url": "https://github.com/nasa-gcn/Astro-Flavored-Markdown/issues"
-  },
-  "homepage": "https://github.com/nasa-gcn/Astro-Flavored-Markdown#readme",
+  "contributors": [
+    {
+      "name": "Dakota Dutko",
+      "email": "dakota.c.dutko@nasa.gov"
+    },
+    {
+      "name": "Leo Singer",
+      "email": "leo.p.singer@nasa.gov"
+    }
+  ],
   "dependencies": {
     "unist-util-visit": "^4.1.1"
   },
   "devDependencies": {
     "prettier": "^2.8.2",
     "remark": "^14.0.2"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
   }
 }
