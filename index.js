@@ -2,10 +2,9 @@ import { SKIP, visit } from 'unist-util-visit'
 // import type { Node, Parent } from 'unist'
 // import type { Literal, Text } from 'mdast'
 
-const re = /\d{4}-\d{2}-\d{2}Z?/
+const re = /\d{4}-\d{2}-\d{2}(?:[ T]\d{2}(?::\d{2}(?::\d{2}(?:\.\d+)?)?)?)?Z?/
 
 export default function astromdDatetime(tree) {
-  // const re = /\d{4}-\d{2}-\d{2}(?:[ T]\d{2}(?::\d{2}(?::\d{2}(?:\.\d+))))Z?/
   visit(
     tree,
     'text',
