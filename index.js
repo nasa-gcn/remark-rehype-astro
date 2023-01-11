@@ -1,100 +1,35 @@
-import { visit } from 'unist-util-visit'
+import { SKIP, visit } from 'unist-util-visit'
+// import type { Node, Parent } from 'unist'
+// import type { Literal, Text } from 'mdast'
 
-export default function plugin() {
-  // transformer
-  return (tree) => {
-    visit(tree, 'text', (node) => {
-      const matches = parseISO8601Time(node.value)
-      if (matches) {
-        node = buildNewTree(node, matches)
-      }
-    })
-  }
+const re = /\d{4}-\d{2}-\d{2}Z?/
 
-  function buildNewTree(node, matches) {
-    console.log(node)
-    const childrenNodes = parseNewNodes(node, matches)
-    const baseNode = {
-      type: 'element',
-      tagName: 'p',
-      properties: {},
-      children: childrenNodes,
-      position: {
-        start: {
-          line: node.position.line,
-          column: node.position.start.column,
-          offset: node.position.start.column,
-        },
-        end: {
-          line: node.position.line,
-          column: node.position.end.column,
-          offset: node.position.end.column,
-        },
-      },
-    }
-    return baseNode
-  }
+export default function astromdDatetime(tree) {
+  // const re = /\d{4}-\d{2}-\d{2}(?:[ T]\d{2}(?::\d{2}(?::\d{2}(?:\.\d+))))Z?/
+  visit(
+    tree,
+    'text',
+    ({ value } /*: Text*/, index /*: number*/, parent /*: Parent*/) => {
+      const match = re.exec(value)
+      if (match) {
+        const [matchText] = match
+        const { index: matchStart } = match
+        const matchEnd = matchStart + matchText.length
 
-  function parseISO8601Time(stringValue) {
-    // hh:mm:ss[.sss][+-hh:mm]
-    const pattern =
-      /([0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9])?(Z|([+-][0-9]{2}:[0-9]{2}))?)/g
-    return pattern.exec(stringValue)
-  }
-
-  function parseNewNodes(baseNode, matches) {
-    let startNode = JSON.parse(JSON.stringify(baseNode))
-    startNode.value = startNode.value.substring(0, matches.index)
-    startNode.position.end.column =
-      startNode.position.start.column + startNode.value.length
-    startNode.position.end.offset =
-      startNode.position.start.offset + startNode.value.length
-
-    let mainNode = {
-      type: 'element',
-      tagName: 'strong',
-      properties: {},
-      children: [
-        {
+        const nodes /*: Literal[]*/ = []
+        if (matchStart > 0)
+          nodes.push({ type: 'text', value: value.slice(0, matchStart) })
+        nodes.push({
           type: 'text',
-          value: matches[0],
-          position: {
-            start: {
-              line: baseNode.position.start.line,
-              column: startNode.position.end.column,
-              offset: startNode.position.end.column,
-            },
-            end: {
-              line: baseNode.position.end.line,
-              column: startNode.position.end.column + matches[0].length,
-              offset: startNode.position.end.column + matches[0].length,
-            },
-          },
-        },
-      ],
-      position: {
-        start: {
-          line: baseNode.position.start.line,
-          column: startNode.position.end.column,
-          offset: startNode.position.end.column,
-        },
-        end: {
-          line: baseNode.position.start.line,
-          column: startNode.position.end.column + matches[0].length,
-          offset: startNode.position.end.column + matches[0].length,
-        },
-      },
+          value: matchText,
+          data: { astromd: 'datetime' },
+        })
+        if (matchEnd < value.length)
+          nodes.push({ type: 'text', value: value.slice(matchEnd) })
+
+        parent.children.splice(index, 1, ...nodes)
+        return [SKIP, index + nodes.length]
+      }
     }
-
-    let endNode = JSON.parse(JSON.stringify(baseNode))
-    const endNodeStartPosition = matches.index + matches[0].length
-    endNode.value = endNode.value.substring(
-      endNodeStartPosition,
-      endNode.value.length
-    )
-    endNode.position.start.column = endNodeStartPosition
-    endNode.position.start.offset = endNodeStartPosition
-
-    return [startNode, mainNode, endNode]
-  }
+  )
 }

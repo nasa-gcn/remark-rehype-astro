@@ -1,18 +1,22 @@
-import plugin from './index.js'
-import { remark } from 'remark'
+import astromdDatetime from './index.js'
+import {fromMarkdown} from 'mdast-util-from-markdown'
 
 const md = `
-# Test file
+# Hello, world
 
-13:45:30 == 1:45:30 PM
-13:45:30.123 == 1:45:30.123 PM
-13:45:30+02:00 == 1:45:30 PM, with a time zone offset of +02:00
-13:45:30Z == 1:45:30 PM in UTC
+This paragraph contains a time 2022-10-03Z and some more text
+
+This paragraph contains a time 2022-10-03Z
+
+2022-10-03Z is a time
 `
 
-describe('datetime', () => {
+describe('astromdDatetime', () => {
   test('parses sample text', async () => {
-    const result = remark().use(plugin).parse(md)
-    expect(result).toBe({})
+    const result = fromMarkdown(md)
+    astromdDatetime(result)
+    expect(result.children[1].children).toStrictEqual([{"type": "text", "value": "This paragraph contains a time "}, {"data": {"astromd": "datetime"}, "type": "text", "value": "2022-10-03Z"}, {"type": "text", "value": " and some more text"}])
+    expect(result.children[2].children).toStrictEqual([{"type": "text", "value": "This paragraph contains a time "}, {"data": {"astromd": "datetime"}, "type": "text", "value": "2022-10-03Z"}])
+    expect(result.children[3].children).toStrictEqual([{"data": {"astromd": "datetime"}, "type": "text", "value": "2022-10-03Z"}, {"type": "text", "value": " is a time"}])
   })
 })
