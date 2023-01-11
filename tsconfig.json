@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/node14/tsconfig.json",
+  "include": ["src/*"],
+  "exclude": ["**/*test*.ts", "**/__tests__/**"],
+  "compilerOptions": {
+    "declaration": true,
+    "outDir": ".",
+    "module": "esnext"
+  },
+}
