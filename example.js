@@ -1,5 +1,4 @@
 import plugin from "./index.js";
-import { retext } from "retext";
 import fs from "fs";
 import { unified } from "unified";
 import remarkParse from "remark-parse";
