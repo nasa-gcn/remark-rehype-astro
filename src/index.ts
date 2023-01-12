@@ -2,6 +2,17 @@ import { SKIP, visit } from 'unist-util-visit'
 import type { Node, Parent } from 'unist'
 import type { Text } from 'mdast'
 
+export interface AstroText extends Text {
+  data: {
+    astromd: {
+      /** Astro Flavored Markdown data type */
+      type: string
+      /** Normalized value */
+      value: string
+    }
+  }
+}
+
 interface VisitorSpec {
   /** Name of the Astro Flavored Markdown type. */
   type: string
