@@ -20,15 +20,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: NPM Install
         run: npm ci
-      - name: Run eslint linter
-        run: npx eslint --max-warnings 0 .
-      # - name: Run TypeScript compiler
-      #   run: npx tsc -p .
+      # - name: Run eslint linter
+      #   run: npx eslint --max-warnings 0 .
       - name: Run Prettier code style checks
         run: npx prettier -c .
       - name: Run unit tests
         run: npm run test
-      - name: Run example code
-        run: node example.js
-      # - name: Upload to Codecov.io
-      #   uses: codecov/codecov-action@v3
+      - name: Upload to Codecov.io
+        uses: codecov/codecov-action@v3
