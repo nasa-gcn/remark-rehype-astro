@@ -1,6 +1,5 @@
 import { SKIP, visit } from 'unist-util-visit'
-import type { Node, Parent } from 'unist'
-import type { Text } from 'mdast'
+import type { Parent, Text } from 'mdast'
 
 export interface AstroText extends Text {
   data: {
@@ -34,8 +33,11 @@ const visitorSpecs: VisitorSpec[] = [
   },
 ]
 
-export default function astromd(tree: Node) {
-  visit(tree, 'text', ({ value }: Text, index: number, parent: Parent) => {
+export default function remarkAstroMd<T extends Parent>(tree: T): T {
+  visit(tree, 'text', ({ value }, index, parent) => {
+    if (parent === null || index === null)
+      throw new Error('Unexpected visit to root element')
+
     for (const { type, pattern, replacement } of visitorSpecs) {
       const match = pattern.exec(value)
       if (match) {
@@ -61,4 +63,6 @@ export default function astromd(tree: Node) {
       }
     }
   })
+
+  return tree
 }

@@ -4,6 +4,7 @@
   "exclude": ["**/test.ts"],
   "compilerOptions": {
     "declaration": true,
-    "outDir": "."
+    "outDir": ".",
+    "module": "es2015"
   }
 }
