@@ -1,7 +1,7 @@
 {
-  "name": "astro-flavored-markdown",
-  "version": "1.0.0",
-  "description": "A remark markdown dialect for astronomical bulletins",
+  "name": "remark-astromd",
+  "version": "0.0.1",
+  "description": "A Remark plugin for Astro Flavored Markdown",
   "main": "index.js",
   "scripts": {
     "prepare:husky": "husky install",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:nasa-gcn/astro-flavored-markdown"
+    "url": "github:nasa-gcn/remark-astromd"
   },
   "keywords": [],
   "contributors": [
