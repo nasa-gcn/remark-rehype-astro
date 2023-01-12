@@ -1,5 +1,5 @@
 {
-  "name": "remark-astromd",
+  "name": "@nasa-gcn/remark-astromd",
   "version": "0.0.1",
   "description": "A Remark plugin for Astro Flavored Markdown",
   "main": "index.js",
