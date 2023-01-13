@@ -33,7 +33,7 @@ const visitorSpecs: VisitorSpec[] = [
   },
 ]
 
-export default function remarkAstroMd<T extends Parent>(tree: T): T {
+export default function mdastAstroMd<T extends Parent>(tree: T): T {
   visit(tree, 'text', ({ value }, index, parent) => {
     if (parent === null || index === null)
       throw new Error('Unexpected visit to root element')

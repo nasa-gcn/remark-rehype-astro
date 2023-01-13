@@ -1,7 +1,7 @@
 {
-  "name": "@nasa-gcn/remark-astromd",
+  "name": "@nasa-gcn/mdast-astromd",
   "version": "0.0.1",
-  "description": "A Remark plugin for Astro Flavored Markdown",
+  "description": "An mdast plugin for Astro Flavored Markdown",
   "main": "index.js",
   "scripts": {
     "prepare:husky": "husky install",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:nasa-gcn/remark-astromd"
+    "url": "github:nasa-gcn/mdast-astromd"
   },
   "keywords": [],
   "contributors": [

@@ -1,4 +1,4 @@
-import remarkAstroMd from '.'
+import mdastAstroMd from '.'
 import { fromMarkdown } from 'mdast-util-from-markdown'
 
 const md = `
@@ -13,7 +13,7 @@ This paragraph contains a time 2022-10-03
 
 describe('datetimer', () => {
   test('parses sample text', async () => {
-    const tree = remarkAstroMd(fromMarkdown(md))
+    const tree = mdastAstroMd(fromMarkdown(md))
     expect(tree.children[1]).toHaveProperty('children', [
       { type: 'text', value: 'This paragraph contains a time ' },
       {

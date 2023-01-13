@@ -1,8 +1,8 @@
-[![codecov](https://codecov.io/gh/nasa-gcn/remark-astromd/branch/main/graph/badge.svg?token=3ID7X7XNNQ)](https://codecov.io/gh/nasa-gcn/remark-astromd)
+[![codecov](https://codecov.io/gh/nasa-gcn/mdast-astromd/branch/main/graph/badge.svg?token=3ID7X7XNNQ)](https://codecov.io/gh/nasa-gcn/mdast-astromd)
 
 # remark-astromd
 
-This is a plugin for [Remark](https://remark.js.org) for parsing Astro Flavored Markdown, a dialect of [Markdown](https://www.markdownguide.org) for rapid astronomy communications.
+This is a plugin for [mdast](https://github.com/syntax-tree/mdast) for parsing Astro Flavored Markdown, a dialect of [Markdown](https://www.markdownguide.org) for rapid astronomy communications.
 
 Astro Flavored Markdown detects dates, times, sky coordinates, and bibliographic references. Astro Flavored Markdown data is tagged in the [mdast](https://github.com/syntax-tree/mdast) syntax tree for later enrichment.
 
