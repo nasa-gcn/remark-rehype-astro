@@ -1,6 +1,6 @@
 [![codecov](https://codecov.io/gh/nasa-gcn/mdast-astromd/branch/main/graph/badge.svg?token=3ID7X7XNNQ)](https://codecov.io/gh/nasa-gcn/mdast-astromd)
 
-# remark-astromd
+# mdast-astromd
 
 This is a plugin for [mdast](https://github.com/syntax-tree/mdast) for parsing Astro Flavored Markdown, a dialect of [Markdown](https://www.markdownguide.org) for rapid astronomy communications.
 
