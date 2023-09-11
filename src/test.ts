@@ -11,7 +11,7 @@ This paragraph contains a time 2022-10-03
 2022-10-03T12:01:01Z is a time
 `
 
-describe('datetimer', () => {
+describe('datetime', () => {
   test('parses sample text', async () => {
     const tree = mdastAstroMd(fromMarkdown(md))
     expect(tree.children[1]).toHaveProperty('children', [
