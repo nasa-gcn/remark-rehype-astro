@@ -20,8 +20,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: NPM Install
         run: npm ci
-      # - name: Run eslint linter
-      #   run: npx eslint --max-warnings 0 .
+      - name: Run eslint linter
+        run: npx eslint --max-warnings 0 .
       - name: Run Prettier code style checks
         run: npx prettier -c .
       - name: Run unit tests

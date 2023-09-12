@@ -1,0 +1,166 @@
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "heading",
+      "depth": 1,
+      "children": [
+        {
+          "type": "text",
+          "value": "Hello, world",
+          "position": {
+            "start": {
+              "line": 1,
+              "column": 3,
+              "offset": 2
+            },
+            "end": {
+              "line": 1,
+              "column": 15,
+              "offset": 14
+            }
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 1,
+          "column": 15,
+          "offset": 14
+        }
+      }
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "This paragraph contains a time "
+        },
+        {
+          "type": "text",
+          "value": "2022-10-03 12:01:01.313",
+          "data": {
+            "astromd": {
+              "type": "datetime",
+              "value": "2022-10-03T12:01:01.313Z"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "value": " and some more text"
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 3,
+          "column": 1,
+          "offset": 16
+        },
+        "end": {
+          "line": 3,
+          "column": 74,
+          "offset": 89
+        }
+      }
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "This paragraph contains a time "
+        },
+        {
+          "type": "text",
+          "value": "2022-10-03",
+          "data": {
+            "astromd": {
+              "type": "datetime",
+              "value": "2022-10-03Z"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "value": " and another one "
+        },
+        {
+          "type": "text",
+          "value": "2022-10-04",
+          "data": {
+            "astromd": {
+              "type": "datetime",
+              "value": "2022-10-04Z"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "value": " and more text"
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 5,
+          "column": 1,
+          "offset": 91
+        },
+        "end": {
+          "line": 5,
+          "column": 83,
+          "offset": 173
+        }
+      }
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "2022-10-03T12:01:01Z",
+          "data": {
+            "astromd": {
+              "type": "datetime",
+              "value": "2022-10-03T12:01:01Z"
+            }
+          }
+        },
+        {
+          "type": "text",
+          "value": " is a time"
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 7,
+          "column": 1,
+          "offset": 175
+        },
+        "end": {
+          "line": 7,
+          "column": 31,
+          "offset": 205
+        }
+      }
+    }
+  ],
+  "position": {
+    "start": {
+      "line": 1,
+      "column": 1,
+      "offset": 0
+    },
+    "end": {
+      "line": 8,
+      "column": 1,
+      "offset": 206
+    }
+  }
+}
