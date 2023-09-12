@@ -30,8 +30,7 @@ const visitorSpecs: VisitorSpec[] = [
     type: 'datetime',
     pattern:
       /(\d{4}-\d{2}-\d{2})(?:[ T](\d{2}(?::\d{2}(?::\d{2}(?:\.\d+)?)?))?)?Z?/,
-    replacement: (_: string, date: string, time?: string) =>
-      time ? `${date}T${time}Z` : `${date}Z`,
+    replacement: (_, date, time) => (time ? `${date}T${time}Z` : `${date}Z`),
   },
 ]
 
