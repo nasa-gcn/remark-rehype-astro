@@ -50,7 +50,7 @@
           "type": "text",
           "value": "123",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "gcn-circular",
               "value": 123
             }
@@ -68,7 +68,7 @@
           "type": "text",
           "value": "456",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "gcn-circular",
               "value": 456
             }
@@ -103,7 +103,7 @@
           "type": "text",
           "value": "1",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "gcn-circular",
               "value": 1
             }
@@ -117,7 +117,7 @@
           "type": "text",
           "value": "23a",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "gcn-circular",
               "value": 23.5
             }
@@ -131,7 +131,7 @@
           "type": "text",
           "value": "45.5",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "gcn-circular",
               "value": 45.5
             }
@@ -145,7 +145,7 @@
           "type": "text",
           "value": "42",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "gcn-circular",
               "value": 42
             }

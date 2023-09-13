@@ -1,7 +1,7 @@
 {
-  "name": "@nasa-gcn/mdast-astromd",
+  "name": "@nasa-gcn/remark-astro",
   "version": "0.0.1",
-  "description": "An mdast plugin for Astro Flavored Markdown",
+  "description": "A Remark plugin for Astro Flavored Markdown",
   "main": "index.js",
   "files": [
     "types/*.d.ts"
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:nasa-gcn/mdast-astromd"
+    "url": "github:nasa-gcn/remark-astro"
   },
   "license": "Apache-2.0",
   "keywords": [],
@@ -34,6 +34,7 @@
     "mdast-util-find-and-replace": "^3.0.0"
   },
   "devDependencies": {
+    "@nasa-gcn/eslint-config-gitignore": "^0.0.1",
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
     "@tsconfig/node16": "^16.1.1",
     "@types/jest": "^29.2.5",
@@ -51,10 +52,11 @@
     "lint-staged": "^13.1.0",
     "mdast-util-from-markdown": "^2.0.0",
     "npm-run-all": "^4.1.5",
-    "prettier": "^2.8.2",
-    "ts-dedent": "^2.2.0",
+    "prettier": "3.0.3",
+    "remark-parse": "^10.0.2",
     "ts-jest": "^29.1.1",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "unified": "^10.0.0"
   },
   "type": "module",
   "sideEffects": false,
@@ -91,6 +93,7 @@
     },
     "extends": [
       "eslint:recommended",
+      "@nasa-gcn/eslint-config-gitignore",
       "prettier"
     ],
     "overrides": [

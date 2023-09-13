@@ -1,15 +1,27 @@
 import { readFile, writeFile } from 'fs/promises'
 import { globSync } from 'glob'
-import { fromMarkdown } from 'mdast-util-from-markdown'
+import remarkParse from 'remark-parse'
+import { Processor, unified } from 'unified'
 
-import mdastAstroMd from './src'
+import remarkAstro from './src'
 
 async function read(filename: string) {
   return await readFile(filename, { encoding: 'utf-8' })
 }
 
+function remarkDumpJson(this: Processor) {
+  this.Compiler = (root) => root
+}
+
 test.each(globSync('src/replacements/*/test.md'))('%s', async (mdFilename) => {
-  const expected = mdastAstroMd(fromMarkdown(await read(mdFilename)))
+  const expected = (
+    await unified()
+      .use(remarkParse)
+      .use(remarkAstro)
+      .use(remarkDumpJson)
+      .process(await readFile(mdFilename))
+  ).result
+
   const jsonFilename = mdFilename.replace(/\.md$/, '.json')
 
   let resultText
