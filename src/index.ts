@@ -5,7 +5,7 @@ import replacements from './replacements.js'
 
 export type { AstroData, AstroText } from './nodes.js'
 
-export function mdastAstro(tree: Nodes) {
+export function mdastAstro<T extends Nodes>(tree: T) {
   findAndReplace(tree, replacements)
   return tree
 }
