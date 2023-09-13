@@ -1,50 +1,11 @@
-import type { Nodes, Text } from 'mdast'
-import { type Find, findAndReplace } from 'mdast-util-find-and-replace'
+import type { Nodes } from 'mdast'
+import { findAndReplace } from 'mdast-util-find-and-replace'
 
-type AstroData = {
-  /** Astro Flavored Markdown data type */
-  type: string
-  /** Normalized value */
-  value: string
-}
+import replacements from './replacements/index.js'
 
-export interface AstroText extends Text {
-  data: {
-    astromd: AstroData
-  }
-}
+export type { AstroData, AstroText } from './nodes.js'
 
-interface VisitorSpec {
-  /** Name of the Astro Flavored Markdown type. */
-  type: string
-  /** Regular expression to search for. */
-  pattern: Find
-  /** Replacement function to generate normalized value.
-   * The function should be suitable for passing to String.replace().
-   */
-  replacement: (value: string, ...groups: string[]) => string
-}
-
-const visitorSpecs: VisitorSpec[] = [
-  {
-    type: 'datetime',
-    pattern:
-      /(\d{4}-\d{2}-\d{2})(?:[ T](\d{2}(?::\d{2}(?::\d{2}(?:\.\d+)?)?))?)?Z?/,
-    replacement: (_, date, time) => (time ? `${date}T${time}Z` : `${date}Z`),
-  },
-]
-
-export default function mdastAstroMd<T extends Nodes>(tree: T): T {
-  findAndReplace(
-    tree,
-    visitorSpecs.map(({ type, pattern, replacement }) => [
-      pattern,
-      (value: string, ...groups: string[]) => ({
-        type: 'text',
-        value,
-        data: { astromd: { type, value: replacement(value, ...groups) } },
-      }),
-    ])
-  )
+export default function <T extends Nodes>(tree: T): T {
+  findAndReplace(tree, replacements)
   return tree
 }

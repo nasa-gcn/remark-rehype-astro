@@ -26,3 +26,7 @@ Astro Flavored Markdown supports the following types.
 ## datetime
 
 A UTC date with an optional time, normalized to [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601).
+
+## gcn-circular
+
+A reference to a GCN Circular.
