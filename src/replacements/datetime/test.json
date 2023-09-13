@@ -46,7 +46,7 @@
           "type": "text",
           "value": "2022-10-03 12:01:01.313",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "datetime",
               "value": "2022-10-03T12:01:01.313Z"
             }
@@ -81,7 +81,7 @@
           "type": "text",
           "value": "2022-10-03",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "datetime",
               "value": "2022-10-03Z"
             }
@@ -95,7 +95,7 @@
           "type": "text",
           "value": "2022-10-04",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "datetime",
               "value": "2022-10-04Z"
             }
@@ -126,7 +126,7 @@
           "type": "text",
           "value": "2022-10-03T12:01:01Z",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "datetime",
               "value": "2022-10-03T12:01:01Z"
             }

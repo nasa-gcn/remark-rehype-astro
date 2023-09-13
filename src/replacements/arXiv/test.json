@@ -12,7 +12,7 @@
           "type": "text",
           "value": "arXiv:astro-ph/1234567",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "arXiv",
               "value": "arXiv:astro-ph/1234567"
             }
@@ -43,7 +43,7 @@
           "type": "text",
           "value": "arXiv:1234.56789",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "arXiv",
               "value": "arXiv:1234.56789"
             }
@@ -74,7 +74,7 @@
           "type": "text",
           "value": "arXiv:1234.56789v2",
           "data": {
-            "astromd": {
+            "astro": {
               "type": "arXiv",
               "value": "arXiv:1234.56789v2"
             }

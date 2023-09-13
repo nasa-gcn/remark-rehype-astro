@@ -11,7 +11,7 @@ export type AstroData = {
 
 export interface AstroText extends Text {
   data: {
-    astromd: AstroData
+    astro: AstroData
   }
 }
 
@@ -26,6 +26,6 @@ export function astroText(
 ): AstroText {
   return {
     ...text(value),
-    data: { astromd: { type, value: astroValue ?? value } },
+    data: { astro: { type, value: astroValue ?? value } },
   }
 }
