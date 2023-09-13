@@ -1,40 +1,69 @@
 import { readFile, writeFile } from 'fs/promises'
 import { globSync } from 'glob'
+import type { Nodes } from 'mdast'
+import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
+import remarkRehype from 'remark-rehype'
 import { Processor, unified } from 'unified'
+import { removePosition } from 'unist-util-remove-position'
 
-import remarkAstro from './src'
+import { rehypeAstro, remarkAstro } from './src'
 
 async function read(filename: string) {
   return await readFile(filename, { encoding: 'utf-8' })
 }
 
-function remarkDumpJson(this: Processor) {
-  this.Compiler = (root) => root
+function remarkRemovePosition() {
+  return (tree: Nodes) => {
+    removePosition(tree)
+    return tree
+  }
 }
 
-test.each(globSync('src/replacements/*/test.md'))('%s', async (mdFilename) => {
-  const expected = (
-    await unified()
-      .use(remarkParse)
-      .use(remarkAstro)
-      .use(remarkDumpJson)
-      .process(await readFile(mdFilename))
-  ).result
+function remarkJson(this: Processor) {
+  this.Compiler = (root) => JSON.stringify(root, undefined, 2)
+}
 
-  const jsonFilename = mdFilename.replace(/\.md$/, '.json')
+function remarkProcessor() {
+  return unified()
+    .use(remarkParse)
+    .use(remarkRemovePosition)
+    .use(remarkAstro)
+    .use(remarkJson)
+}
 
-  let resultText
-  try {
-    resultText = await read(jsonFilename)
-  } catch {
-    const draftFilename = jsonFilename.replace(/\.json$/, '.draft.json')
-    await writeFile(draftFilename, JSON.stringify(expected, undefined, 2))
-    throw new Error(
-      `Could not read the expected results file, '${jsonFilename}'. Please review the draft results file at '${draftFilename}'. If the results are correct, then rename it to '${jsonFilename}' and add it to version control.`
-    )
-  }
-  const result = JSON.parse(resultText)
+function rehypeProcessor() {
+  return unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeAstro)
+    .use(rehypeStringify)
+}
 
-  expect(expected).toStrictEqual(result)
+describe.each([
+  ['remarkAstro', 'json', remarkProcessor],
+  ['rehypeAstro', 'html', rehypeProcessor],
+])('%s', (_, ext, processor) => {
+  test.each(globSync('src/replacements/*/test.md'))(
+    '%s',
+    async (inputFilename) => {
+      const result = (
+        await processor().process(await readFile(inputFilename))
+      ).value.toString()
+
+      const expectedFilename = inputFilename.replace(/\.md$/, `.${ext}`)
+      let expected
+      try {
+        expected = await read(expectedFilename)
+      } catch {
+        const draftFilename = inputFilename.replace(/\.md$/, `.draft.${ext}`)
+        await writeFile(draftFilename, result)
+        throw new Error(
+          `Could not read the expected results file, '${expectedFilename}'. Please review the draft results file at '${draftFilename}'. If the results are correct, then rename it to '${expectedFilename}' and add it to version control.`
+        )
+      }
+
+      expect(result).toStrictEqual(expected)
+    }
+  )
 })
