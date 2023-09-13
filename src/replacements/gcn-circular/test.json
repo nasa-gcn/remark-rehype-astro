@@ -7,33 +7,9 @@
       "children": [
         {
           "type": "text",
-          "value": "Hello, world",
-          "position": {
-            "start": {
-              "line": 1,
-              "column": 3,
-              "offset": 2
-            },
-            "end": {
-              "line": 1,
-              "column": 15,
-              "offset": 14
-            }
-          }
+          "value": "Hello, world"
         }
-      ],
-      "position": {
-        "start": {
-          "line": 1,
-          "column": 1,
-          "offset": 0
-        },
-        "end": {
-          "line": 1,
-          "column": 15,
-          "offset": 14
-        }
-      }
+      ]
     },
     {
       "type": "paragraph",
@@ -50,10 +26,8 @@
           "type": "text",
           "value": "123",
           "data": {
-            "astro": {
-              "type": "gcn-circular",
-              "value": 123
-            }
+            "class": "gcn-circular",
+            "value": 123
           }
         },
         {
@@ -68,25 +42,11 @@
           "type": "text",
           "value": "456",
           "data": {
-            "astro": {
-              "type": "gcn-circular",
-              "value": 456
-            }
+            "class": "gcn-circular",
+            "value": 456
           }
         }
-      ],
-      "position": {
-        "start": {
-          "line": 3,
-          "column": 1,
-          "offset": 16
-        },
-        "end": {
-          "line": 3,
-          "column": 54,
-          "offset": 69
-        }
-      }
+      ]
     },
     {
       "type": "paragraph",
@@ -103,10 +63,8 @@
           "type": "text",
           "value": "1",
           "data": {
-            "astro": {
-              "type": "gcn-circular",
-              "value": 1
-            }
+            "class": "gcn-circular",
+            "value": 1
           }
         },
         {
@@ -117,10 +75,8 @@
           "type": "text",
           "value": "23a",
           "data": {
-            "astro": {
-              "type": "gcn-circular",
-              "value": 23.5
-            }
+            "class": "gcn-circular",
+            "value": 23.5
           }
         },
         {
@@ -131,10 +87,8 @@
           "type": "text",
           "value": "45.5",
           "data": {
-            "astro": {
-              "type": "gcn-circular",
-              "value": 45.5
-            }
+            "class": "gcn-circular",
+            "value": 45.5
           }
         },
         {
@@ -145,37 +99,11 @@
           "type": "text",
           "value": "42",
           "data": {
-            "astro": {
-              "type": "gcn-circular",
-              "value": 42
-            }
+            "class": "gcn-circular",
+            "value": 42
           }
         }
-      ],
-      "position": {
-        "start": {
-          "line": 5,
-          "column": 1,
-          "offset": 71
-        },
-        "end": {
-          "line": 5,
-          "column": 48,
-          "offset": 118
-        }
-      }
+      ]
     }
-  ],
-  "position": {
-    "start": {
-      "line": 1,
-      "column": 1,
-      "offset": 0
-    },
-    "end": {
-      "line": 6,
-      "column": 1,
-      "offset": 119
-    }
-  }
+  ]
 }
