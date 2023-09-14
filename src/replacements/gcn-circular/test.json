@@ -53,6 +53,51 @@
       "children": [
         {
           "type": "text",
+          "value": "GCN Circ. "
+        },
+        {
+          "type": "text",
+          "value": "789",
+          "data": {
+            "class": "gcn-circular",
+            "value": 789
+          }
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "text",
+          "value": "GCN Circs. "
+        },
+        {
+          "type": "text",
+          "value": "3",
+          "data": {
+            "class": "gcn-circular",
+            "value": 3
+          }
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "text",
+          "value": "4",
+          "data": {
+            "class": "gcn-circular",
+            "value": 4
+          }
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
           "value": "And this one refers to "
         },
         {
