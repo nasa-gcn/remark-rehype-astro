@@ -11,7 +11,7 @@ const circularIdRegExp = /\d+(?:a|\.5)?/gi
 const circularId = circularIdRegExp.source
 const legacyUrlOrigin = /https?:\/\/gcn\.gsfc\.nasa\.gov/.source
 const legacyUrlExtension = /\.gcn3/.source
-const legacyUrl = `${legacyUrlOrigin}/gcn3/(${circularId})${legacyUrlExtension}`
+const legacyUrl = `${legacyUrlOrigin}/(?:gcn/)*gcn3/(${circularId})${legacyUrlExtension}`
 const urlOrigin = /https?:\/\/gcn.nasa.gov/.source
 const url = `${urlOrigin}/circulars/(${circularId})`
 
