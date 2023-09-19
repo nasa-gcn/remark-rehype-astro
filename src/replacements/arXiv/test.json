@@ -13,7 +13,7 @@
           "value": "arXiv:astro-ph/1234567",
           "data": {
             "class": "arXiv",
-            "value": "arXiv:astro-ph/1234567"
+            "value": "astro-ph/1234567"
           }
         }
       ]
@@ -30,7 +30,7 @@
           "value": "arXiv:1234.56789",
           "data": {
             "class": "arXiv",
-            "value": "arXiv:1234.56789"
+            "value": "1234.56789"
           }
         }
       ]
@@ -47,7 +47,7 @@
           "value": "arXiv:1234.56789v2",
           "data": {
             "class": "arXiv",
-            "value": "arXiv:1234.56789v2"
+            "value": "1234.56789v2"
           }
         }
       ]

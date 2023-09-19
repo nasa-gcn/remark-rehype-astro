@@ -13,7 +13,7 @@
           "value": "doi:10.1000/foo.bar",
           "data": {
             "class": "doi",
-            "value": "doi:10.1000/foo.bar"
+            "value": "10.1000/foo.bar"
           }
         },
         {
@@ -34,7 +34,7 @@
           "value": "doi:10.1000/foo.bar",
           "data": {
             "class": "doi",
-            "value": "doi:10.1000/foo.bar"
+            "value": "10.1000/foo.bar"
           }
         },
         {
@@ -46,7 +46,7 @@
           "value": "doi:10.1000/bat.baz",
           "data": {
             "class": "doi",
-            "value": "doi:10.1000/bat.baz"
+            "value": "10.1000/bat.baz"
           }
         },
         {
@@ -67,7 +67,7 @@
           "value": "doi:10.1000/foo.bar",
           "data": {
             "class": "doi",
-            "value": "doi:10.1000/foo.bar"
+            "value": "10.1000/foo.bar"
           }
         },
         {

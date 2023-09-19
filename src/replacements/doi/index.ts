@@ -10,7 +10,7 @@ export default {
     `doi:(${prefix}/(?:${suffixChars}|(?:${suffixCharsNonTerminal})(?!${terminal}))+)`,
     'g'
   ),
-  replace(data, value) {
-    return data('doi', value.toLowerCase())
+  replace(data, text, value) {
+    return data('doi', text, value.toLowerCase())
   },
 } satisfies FindAndReplace
