@@ -1,6 +1,6 @@
 {
   "name": "@nasa-gcn/remark-rehype-astro",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A Remark plugin for Astro Flavored Markdown",
   "main": "index.js",
   "files": [
