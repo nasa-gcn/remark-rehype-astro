@@ -87,6 +87,23 @@
       "children": [
         {
           "type": "text",
+          "value": "And even really weird legacy URLs work: "
+        },
+        {
+          "type": "text",
+          "value": "https://gcn.gsfc.nasa.gov/gcn/gcn/gcn/gcn3/33567.gcn3",
+          "data": {
+            "class": "gcn-circular",
+            "value": 33567
+          }
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
           "value": "GCN Circ. "
         },
         {
