@@ -40,6 +40,35 @@
       "children": [
         {
           "type": "text",
+          "value": "URL references: "
+        },
+        {
+          "type": "text",
+          "value": "http://www.arxiv.org/abs/1234.56789",
+          "data": {
+            "class": "arXiv",
+            "value": "1234.56789"
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "https://arxiv.org/abs/1234.56789",
+          "data": {
+            "class": "arXiv",
+            "value": "1234.56789"
+          }
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
           "value": "Versioned arXiv reference: "
         },
         {
