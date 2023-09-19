@@ -53,6 +53,40 @@
       "children": [
         {
           "type": "text",
+          "value": "You can refer to a Circular by its URL: "
+        },
+        {
+          "type": "text",
+          "value": "https://gcn.nasa.gov/circulars/26640",
+          "data": {
+            "class": "gcn-circular",
+            "value": 26640
+          }
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "A legacy URL works too: "
+        },
+        {
+          "type": "text",
+          "value": "https://gcn.gsfc.nasa.gov/gcn3/26640.gcn3",
+          "data": {
+            "class": "gcn-circular",
+            "value": 26640
+          }
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
           "value": "GCN Circ. "
         },
         {
