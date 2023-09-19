@@ -60,6 +60,35 @@
       "children": [
         {
           "type": "text",
+          "value": "You can use DOI URls like "
+        },
+        {
+          "type": "text",
+          "value": "http://dx.doi.org/10.1000/foo.bar",
+          "data": {
+            "class": "doi",
+            "value": "10.1000/foo.bar"
+          }
+        },
+        {
+          "type": "text",
+          "value": " or "
+        },
+        {
+          "type": "text",
+          "value": "https://doi.org/10.1000/foo.bar",
+          "data": {
+            "class": "doi",
+            "value": "10.1000/foo.bar"
+          }
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
           "value": "Cite "
         },
         {
