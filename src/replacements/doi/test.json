@@ -1,0 +1,80 @@
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "Citing "
+        },
+        {
+          "type": "text",
+          "value": "doi:10.1000/foo.bar",
+          "data": {
+            "class": "doi",
+            "value": "doi:10.1000/foo.bar"
+          }
+        },
+        {
+          "type": "text",
+          "value": " in a sentence."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "Cite "
+        },
+        {
+          "type": "text",
+          "value": "doi:10.1000/foo.bar",
+          "data": {
+            "class": "doi",
+            "value": "doi:10.1000/foo.bar"
+          }
+        },
+        {
+          "type": "text",
+          "value": ", cite "
+        },
+        {
+          "type": "text",
+          "value": "doi:10.1000/bat.baz",
+          "data": {
+            "class": "doi",
+            "value": "doi:10.1000/bat.baz"
+          }
+        },
+        {
+          "type": "text",
+          "value": ". Another sentence."
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "Cite "
+        },
+        {
+          "type": "text",
+          "value": "doi:10.1000/foo.bar",
+          "data": {
+            "class": "doi",
+            "value": "doi:10.1000/foo.bar"
+          }
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
+    }
+  ]
+}
