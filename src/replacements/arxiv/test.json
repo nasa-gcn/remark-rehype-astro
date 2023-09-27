@@ -12,7 +12,7 @@
           "type": "text",
           "value": "arXiv:astro-ph/1234567",
           "data": {
-            "class": "arXiv",
+            "class": "arxiv",
             "value": "astro-ph/1234567"
           }
         }
@@ -29,7 +29,7 @@
           "type": "text",
           "value": "arXiv:1234.56789",
           "data": {
-            "class": "arXiv",
+            "class": "arxiv",
             "value": "1234.56789"
           }
         }
@@ -46,7 +46,7 @@
           "type": "text",
           "value": "http://www.arxiv.org/abs/1234.56789",
           "data": {
-            "class": "arXiv",
+            "class": "arxiv",
             "value": "1234.56789"
           }
         },
@@ -58,7 +58,7 @@
           "type": "text",
           "value": "https://arxiv.org/abs/1234.56789",
           "data": {
-            "class": "arXiv",
+            "class": "arxiv",
             "value": "1234.56789"
           }
         }
@@ -75,7 +75,7 @@
           "type": "text",
           "value": "arXiv:1234.56789v2",
           "data": {
-            "class": "arXiv",
+            "class": "arxiv",
             "value": "1234.56789v2"
           }
         }
