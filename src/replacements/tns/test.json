@@ -1,0 +1,48 @@
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "AT2017gfo",
+          "data": {
+            "class": "tns",
+            "value": "2017gfo"
+          }
+        },
+        {
+          "type": "text",
+          "value": " was cool"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "AT 2017gfo",
+          "data": {
+            "class": "tns",
+            "value": "2017gfo"
+          }
+        },
+        {
+          "type": "text",
+          "value": " was a kilonova"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "AT20a is not a valid TNS name"
+        }
+      ]
+    }
+  ]
+}
