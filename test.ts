@@ -24,6 +24,10 @@ function remarkJson(this: Processor) {
   this.Compiler = (root) => JSON.stringify(root, undefined, 2)
 }
 
+function splitLines(s: string) {
+  return s.split(/\r?\n/)
+}
+
 function remarkProcessor() {
   return unified()
     .use(remarkParse)
@@ -63,7 +67,8 @@ describe.each([
         )
       }
 
-      expect(result).toStrictEqual(expected)
+      // Compare lines, not the strings themselves, due to newlines on Windows
+      expect(splitLines(result)).toStrictEqual(splitLines(expected))
     }
   )
 })
