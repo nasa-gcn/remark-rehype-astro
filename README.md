@@ -2,9 +2,9 @@
 
 # remark-rehype-astro
 
-This package provides plugins for [remark](https://github.com/remarkjs/remark) and [rehype](https://github.com/rehypejs/rehype) for parsing Astro Flavored Markdown, a dialect of [Markdown](https://www.markdownguide.org) for rapid astronomy communications. Astro Flavored Markdown detects dates, times, sky coordinates, and bibliographic references.
+This is the reference implementation of Astro Flavored Markdown, dialect of [Markdown](https://www.markdownguide.org) for rapid astronomy communications. Astro Flavored Markdown detects and enriches dates, times, sky coordinates, and bibliographic references in text.
 
-The `remark-rehype-astro` package can be used as _either_ a Remark plugin _or_ as a Rehype plugin. Use it in Remark mode if you want a symbolic representation of the Markdown content (for example, to extract data nodes from it). Use it in Rehype mode if you want to render Astro Flavored Mardkown into a Web page.
+The package is a plugin for the [Unified](https://unifiedjs.com) parser ecosystem. It can be used as _either_ a plugin for [Remark](https://github.com/remarkjs/remark) _or_ for [Rehype](https://github.com/rehypejs/rehype). Use it in Remark mode to output a symbolic representation of the Markdown content (for example, to extract data nodes from it). Use it in Rehype mode if you want to render Astro Flavored Mardkown as HTML (for example, for inclusion in a Web page).
 
 For supported syntax, see the [src/replacements](src/replacements) directory. In each directory there is a file called `test.md` illustrating the Markdown syntax, a file called `test.json` containing the resulting astract syntax tree, and a file called `test.html` showing how it is rendered in HTML.
 
@@ -15,8 +15,8 @@ When you use the plugin in Remark mode, it tags Astro Flavored Markdown nodes in
 Here is a basic pipeline for processing in Remark mode:
 
 ```mjs
+import { remarkAstro } from '@nasa-gcn/remark-rehype-astro'
 import remarkParse from 'remark-parse'
-import { remarkAstro } from 'remark-rehype-astro'
 import { unified } from 'unified'
 
 const processor = unified().use(remarkParse).use(remarkAstro)
@@ -57,9 +57,9 @@ When you use the plugin in Rehype mode, it converts Astro Flavored Markdown node
 Here is a basic pipeline for processing in Remark mode:
 
 ```mjs
+import { rehypeAstro } from '@nasa-gcn/remark-rehype-astro'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
-import { rehypeAstro } from 'remark-rehype-astro'
 import { unified } from 'unified'
 
 const processor = unified().use(remarkParse).use(remarkRehype).use(rehypeAstro)
@@ -78,3 +78,5 @@ is represented by the following HTML:
 ```
 
 You can enrich these [`<data>`](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) elements using CSS, JavaScript, or by rendering them as custom React components using [rehype-react](https://github.com/rehypejs/rehype-react).
+
+For an example of Astro Flavored Markdown enriched with React components, see https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/Body.tsx, https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/AstroData.tsx, and https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/AstroData.components.tsx.
