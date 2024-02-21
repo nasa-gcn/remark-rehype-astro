@@ -104,6 +104,39 @@
           "value": "."
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "Cite "
+        },
+        {
+          "type": "text",
+          "value": "doi:10.1000/foo.bar/bat",
+          "data": {
+            "class": "doi",
+            "value": "10.1000/foo.bar/bat"
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "doi:10.1000/foo.bar/baf/baz",
+          "data": {
+            "class": "doi",
+            "value": "10.1000/foo.bar/baf/baz"
+          }
+        },
+        {
+          "type": "text",
+          "value": "."
+        }
+      ]
     }
   ]
 }

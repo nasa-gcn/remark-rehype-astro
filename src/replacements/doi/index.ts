@@ -2,7 +2,7 @@ import type { FindAndReplace } from '../index.js'
 
 const doiMarker = /(?:doi:|https?:\/\/(?:dx\.)?doi\.org\/)/.source
 const suffixChars = /[a-zA-Z0-9]/.source
-const suffixCharsNonTerminal = /[-_.~%]/.source
+const suffixCharsNonTerminal = /[-_.~%/]/.source
 const prefix = /10\.\d{4,}/.source
 const terminal = /\s|$/.source
 
