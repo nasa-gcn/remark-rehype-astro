@@ -80,6 +80,7 @@ is represented by the following HTML:
 You can enrich these [`<data>`](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes) elements using CSS, JavaScript, or by rendering them as custom React components using [rehype-react](https://github.com/rehypejs/rehype-react).
 
 For an example of Astro Flavored Markdown enriched with React components, see the following files:
+
 - https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/Body.tsx
 - https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/AstroData.tsx
 - https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/AstroData.components.tsx
