@@ -2,7 +2,7 @@
 
 # remark-rehype-astro
 
-This is the reference implementation of Astro Flavored Markdown, dialect of [Markdown](https://www.markdownguide.org) for rapid astronomy communications. Astro Flavored Markdown detects and enriches dates, times, sky coordinates, and bibliographic references in text.
+This is the reference implementation of Astro Flavored Markdown, a dialect of [Markdown](https://www.markdownguide.org) for rapid astronomy communications. Astro Flavored Markdown detects and enriches dates, times, sky coordinates, and bibliographic references in text.
 
 The package is a plugin for the [Unified](https://unifiedjs.com) parser ecosystem. It can be used as _either_ a plugin for [Remark](https://github.com/remarkjs/remark) _or_ for [Rehype](https://github.com/rehypejs/rehype). Use it in Remark mode to output a symbolic representation of the Markdown content (for example, to extract data nodes from it). Use it in Rehype mode if you want to render Astro Flavored Mardkown as HTML (for example, for inclusion in a Web page).
 
