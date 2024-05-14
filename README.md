@@ -1,3 +1,4 @@
+[![NPM Version](https://img.shields.io/npm/v/%40nasa-gcn%2Fremark-rehype-astro)](https://www.npmjs.com/package/@nasa-gcn/remark-rehype-astro)
 [![codecov](https://codecov.io/gh/nasa-gcn/remark-rehype-astro/branch/main/graph/badge.svg?token=3ID7X7XNNQ)](https://codecov.io/gh/nasa-gcn/remark-rehype-astro)
 
 # remark-rehype-astro
