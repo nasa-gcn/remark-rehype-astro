@@ -200,6 +200,15 @@
           }
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "This is not a Circular: http://gcn.gsfc.nasa.gov/gcn/other/971227.gcn3"
+        }
+      ]
     }
   ]
 }
