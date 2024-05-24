@@ -9,6 +9,8 @@ The package is a plugin for the [Unified](https://unifiedjs.com) parser ecosyste
 
 For supported syntax, see the [src/replacements](src/replacements) directory. In each directory there is a file called `test.md` illustrating the Markdown syntax, a file called `test.json` containing the resulting astract syntax tree, and a file called `test.html` showing how it is rendered in HTML.
 
+You can experiment with Astro Flavored Markdown from the command line using https://github.com/nasa-gcn/afm.
+
 ## Remark mode
 
 When you use the plugin in Remark mode, it tags Astro Flavored Markdown nodes in the [mdast](https://github.com/syntax-tree/mdast) syntax tree by adding `data` attributes with `class` and `value` attributes indicating the kind of data and a normalized, computable value.
