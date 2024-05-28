@@ -17,7 +17,7 @@ const url = `${urlOrigin}/circulars/(${circularId})`
 
 export default {
   find: new RegExp(
-    `${url}|${legacyUrl}|${preamble}${circularId}(?:${conjunction}${circularId})*`,
+    `${url}|${legacyUrl}|(?<=^|\\s)(?:${preamble}${circularId}(?:${conjunction}${circularId})*)`,
     'gi'
   ),
   replace(data, value, circularIdFromUrl, circularIdFromLegacyUrl) {

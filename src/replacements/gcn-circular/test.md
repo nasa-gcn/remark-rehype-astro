@@ -11,3 +11,5 @@ And even really weird legacy URLs work: https://gcn.gsfc.nasa.gov/gcn/gcn/gcn/gc
 GCN Circ. 789 and GCN Circs. 3 and 4
 
 And this one refers to GCNs 1, 23a, 45.5 and 42
+
+This is not a Circular: http://gcn.gsfc.nasa.gov/gcn/other/971227.gcn3
