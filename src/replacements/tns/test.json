@@ -43,6 +43,15 @@
           "value": "AT20a is not a valid TNS name"
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "https://www.google.com/search?q=AT2017gfo is a complete URL, so the TNS name should not be replaced with a link to the TNS page"
+        }
+      ]
     }
   ]
 }
