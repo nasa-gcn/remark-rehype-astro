@@ -84,6 +84,6 @@ You can enrich these [`<data>`](https://developer.mozilla.org/en-US/docs/Learn/H
 
 For an example of Astro Flavored Markdown enriched with React components, see the following files:
 
-- https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/Body.tsx
+- https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId.(%24version)/Body.tsx
 - https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/AstroData.tsx
 - https://github.com/nasa-gcn/gcn.nasa.gov/blob/main/app/routes/circulars.%24circularId/AstroData.components.tsx
