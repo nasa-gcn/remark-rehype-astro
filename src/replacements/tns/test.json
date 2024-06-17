@@ -58,7 +58,19 @@
       "children": [
         {
           "type": "text",
-          "value": "https://google.com/ is a URL but AT2017gfo is not"
+          "value": "https://google.com/ is a URL but "
+        },
+        {
+          "type": "text",
+          "value": "AT2017gfo",
+          "data": {
+            "class": "tns",
+            "value": "2017gfo"
+          }
+        },
+        {
+          "type": "text",
+          "value": " is not"
         }
       ]
     }
