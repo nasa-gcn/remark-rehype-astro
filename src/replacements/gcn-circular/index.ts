@@ -5,7 +5,7 @@ function normalize(match: string) {
   return parseFloat(match.replace(/a$/i, '.5'))
 }
 
-const preamble = /GCN(?:s|\s+Circulars?|\s+Circs?\.)?\s*/.source
+const preamble = /\(?GCN(?:s|\s+Circulars?|\s+Circs?\.?)?\s*(?:#)?/gi.source
 const conjunction = /(?:\s*|,|and)+/.source
 const circularIdRegExp = /\d+(?:a|\.5)?/gi
 const circularId = circularIdRegExp.source
