@@ -6,7 +6,7 @@ function normalize(match: string) {
 }
 
 const preamble = /\(?GCN(?:s|\s+Circulars?|\s+Circs?\.?)?\s*(?:#)?/gi.source
-const conjunction = /(?:\s*|,|and)+/.source
+const conjunction = /(?:\s*#?|,|and\s*#?)+/.source
 const circularIdRegExp = /\d+(?:a|\.5)?/gi
 const circularId = circularIdRegExp.source
 const legacyUrlOrigin = /https?:\/\/gcn\.gsfc\.nasa\.gov/.source
