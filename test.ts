@@ -1,5 +1,6 @@
-import { readFile, writeFile } from 'fs/promises'
+import { readFile } from 'fs/promises'
 import { globSync } from 'glob'
+import { toMatchFile } from 'jest-file-snapshot'
 import type { Nodes } from 'mdast'
 import rehypeStringify from 'rehype-stringify'
 import remarkParse from 'remark-parse'
@@ -8,10 +9,6 @@ import { Processor, unified } from 'unified'
 import { removePosition } from 'unist-util-remove-position'
 
 import { rehypeAstro, remarkAstro } from './src'
-
-async function read(filename: string) {
-  return await readFile(filename, { encoding: 'utf-8' })
-}
 
 function remarkRemovePosition() {
   return (tree: Nodes) => {
@@ -24,51 +21,28 @@ function remarkJson(this: Processor) {
   this.Compiler = (root) => JSON.stringify(root, undefined, 2)
 }
 
-function splitLines(s: string) {
-  return s.split(/\r?\n/)
-}
-
-function remarkProcessor() {
-  return unified()
+const processors = {
+  json: unified()
     .use(remarkParse)
     .use(remarkRemovePosition)
     .use(remarkAstro)
-    .use(remarkJson)
-}
-
-function rehypeProcessor() {
-  return unified()
+    .use(remarkJson),
+  html: unified()
     .use(remarkParse)
     .use(remarkRehype)
     .use(rehypeAstro)
-    .use(rehypeStringify)
+    .use(rehypeStringify),
 }
 
-describe.each([
-  ['remarkAstro', 'json', remarkProcessor],
-  ['rehypeAstro', 'html', rehypeProcessor],
-])('%s', (_, ext, processor) => {
-  test.each(globSync('src/replacements/*/test.md'))(
-    '%s',
-    async (inputFilename) => {
-      const result = (
-        await processor().process(await readFile(inputFilename))
-      ).value.toString()
+expect.extend({ toMatchFile })
 
-      const expectedFilename = inputFilename.replace(/\.md$/, `.${ext}`)
-      let expected
-      try {
-        expected = await read(expectedFilename)
-      } catch {
-        const draftFilename = inputFilename.replace(/\.md$/, `.draft.${ext}`)
-        await writeFile(draftFilename, result)
-        throw new Error(
-          `Could not read the expected results file, '${expectedFilename}'. Please review the draft results file at '${draftFilename}'. If the results are correct, then rename it to '${expectedFilename}' and add it to version control.`
-        )
-      }
+describe.each(globSync('src/replacements/*/test.md'))('convert %s', (path) => {
+  const stem = path.replace(/\.md$/, '')
+  let input: Buffer
 
-      // Compare lines, not the strings themselves, due to newlines on Windows
-      expect(splitLines(result)).toStrictEqual(splitLines(expected))
-    }
+  beforeAll(async () => (input = await readFile(path)))
+
+  test.each(Object.entries(processors))(`to ${stem}.%s`, (ext, proc) =>
+    expect(proc.processSync(input).value).toMatchFile(`${stem}.${ext}`)
   )
 })
