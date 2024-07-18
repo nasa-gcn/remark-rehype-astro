@@ -1,0 +1,2 @@
+src/replacements/*/*.json -text
+src/replacements/*/*.html -text
