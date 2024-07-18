@@ -215,7 +215,7 @@
       "children": [
         {
           "type": "text",
-          "value": "This is a circular without a hashtag "
+          "value": "All of these minor variations with parentheses, octothorpes, character casing, and periods, and different conjunctions are also supported:\n"
         },
         {
           "type": "text",
@@ -231,16 +231,7 @@
         },
         {
           "type": "text",
-          "value": "',"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This is a circular with a hashtag "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -256,16 +247,7 @@
         },
         {
           "type": "text",
-          "value": " and some other stuff after it. #another hashtag that isn't a circular."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "A circular with parenthesis ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -281,16 +263,7 @@
         },
         {
           "type": "text",
-          "value": ")."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has perenthesis and a hashtag ("
+          "value": ")\n("
         },
         {
           "type": "text",
@@ -306,16 +279,7 @@
         },
         {
           "type": "text",
-          "value": ")."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has the word circ with a period after it and no hashtag "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -331,62 +295,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This has the word circ with a period and a hashtag "
-        },
-        {
-          "type": "text",
-          "value": "GCN circ. #"
-        },
-        {
-          "type": "text",
-          "value": "123",
-          "data": {
-            "class": "gcn-circular",
-            "value": 123
-          }
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one, "
-        },
-        {
-          "type": "text",
-          "value": "GCN circ "
-        },
-        {
-          "type": "text",
-          "value": "123",
-          "data": {
-            "class": "gcn-circular",
-            "value": 123
-          }
-        },
-        {
-          "type": "text",
-          "value": " has the word circ with no period or hashtag or parenthesis."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has all the punctuation options ("
+          "value": "\n"
         },
         {
           "type": "text",
@@ -402,16 +311,23 @@
         },
         {
           "type": "text",
-          "value": ") adding some text after."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
+          "value": "\n("
+        },
         {
           "type": "text",
-          "value": "This circular has no punctuation "
+          "value": "GCN circ. #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -427,16 +343,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This pattern has parenthesis and the word circ but no hashtag or period ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -452,16 +359,7 @@
         },
         {
           "type": "text",
-          "value": ")"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has a capital c, no parenthesis, a period, and no # "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -474,15 +372,10 @@
             "class": "gcn-circular",
             "value": 123
           }
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
+        },
         {
           "type": "text",
-          "value": "This one has no parenthesis, a capital c, a period, and a hashtag "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -498,16 +391,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis, a capital c, a period, and a hashtag ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -523,16 +407,7 @@
         },
         {
           "type": "text",
-          "value": "),"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one  has a capital c and no other punctuation "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -548,16 +423,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis, a capital c and no other punctuation ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -573,58 +439,7 @@
         },
         {
           "type": "text",
-          "value": ")"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has a full word circular, a capital c, and no other punctuation. "
-        },
-        {
-          "type": "text",
-          "value": "GCN Circular "
-        },
-        {
-          "type": "text",
-          "value": "123",
-          "data": {
-            "class": "gcn-circular",
-            "value": 123
-          }
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This has a capital C and a hashtag "
-        },
-        {
-          "type": "text",
-          "value": "GCN Circular #"
-        },
-        {
-          "type": "text",
-          "value": "123",
-          "data": {
-            "class": "gcn-circular",
-            "value": 123
-          }
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis, a capital c, a full word circular and no hashtag ("
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -640,16 +455,7 @@
         },
         {
           "type": "text",
-          "value": ")."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one ("
+          "value": "\n"
         },
         {
           "type": "text",
@@ -665,16 +471,39 @@
         },
         {
           "type": "text",
-          "value": ") has parenthesis, a capital c and a hashtag."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
+          "value": "\n("
+        },
         {
           "type": "text",
-          "value": "This one "
+          "value": "GCN Circular "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circular #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -702,16 +531,7 @@
         },
         {
           "type": "text",
-          "value": " has two circulars, no parenthesis (but heres a set just because), and no hashtag."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has two circs, no parenthesis, "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -739,16 +559,7 @@
         },
         {
           "type": "text",
-          "value": " is comma separated, c is capital and word is abbreviated."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has the same as above but without periods "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -776,16 +587,7 @@
         },
         {
           "type": "text",
-          "value": " and with hashtags. #bonustag"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis, no period, hashtags, and a comma separateding it ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -813,16 +615,7 @@
         },
         {
           "type": "text",
-          "value": ")."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis, comma, no period, a capital c, and no # ("
+          "value": ")\n("
         },
         {
           "type": "text",
@@ -850,16 +643,7 @@
         },
         {
           "type": "text",
-          "value": ")."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -887,16 +671,7 @@
         },
         {
           "type": "text",
-          "value": " has a capital c, abbreviated word, no period, no hashtag, and no parenthesis."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has a capital c, a period, comma separated, "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -924,16 +699,7 @@
         },
         {
           "type": "text",
-          "value": " and no 42 (0) parenthesis."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has capital c, hashtags, and abbreviated word "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -961,16 +727,7 @@
         },
         {
           "type": "text",
-          "value": ". It also has no parenthesis."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -998,16 +755,7 @@
         },
         {
           "type": "text",
-          "value": ") and in those (bonus parenthesis test) no hashtag, a comma, and no period."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This is lower case, abbreviated, no hashtags, and comma separated "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -1035,16 +783,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has lower case c, a period, no parenthesis, a comma, and no # "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -1072,16 +811,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has a lower case c and hashtags comma separated "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -1109,16 +839,7 @@
         },
         {
           "type": "text",
-          "value": ". more, commas, for, testing, 123, 456"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis, a lower case c, no hashtag, and a comma ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -1146,25 +867,7 @@
         },
         {
           "type": "text",
-          "value": ")."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This just has the word circs. 42 circulars. a circ 23 feet across. #0000."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has a lower case c, no hashtags, no parenthesis, and an and "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -1192,16 +895,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has no parenthesis, a lowercase c, a period, no hashtags, and an and "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -1229,16 +923,7 @@
         },
         {
           "type": "text",
-          "value": "."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This onw has a lowercase circs, a hashtag, an and, and no parenthesis "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -1266,16 +951,7 @@
         },
         {
           "type": "text",
-          "value": "!"
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has parenthesis ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -1303,16 +979,7 @@
         },
         {
           "type": "text",
-          "value": ") a lowercase circs, no period, no hashtags, and an and."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has no punctuation and just a space separating it. "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -1340,13 +1007,8 @@
         },
         {
           "type": "text",
-          "value": " and the circs is lower case."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
+          "value": "\n"
+        },
         {
           "type": "text",
           "value": "GCN circs. "
@@ -1373,16 +1035,7 @@
         },
         {
           "type": "text",
-          "value": " has a lowercase circs with a period, no hashtags, no parenthesis, and only a space between ids."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one is similar but with hashtags "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -1407,15 +1060,10 @@
             "class": "gcn-circular",
             "value": 456
           }
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
+        },
         {
           "type": "text",
-          "value": "And ("
+          "value": "\n("
         },
         {
           "type": "text",
@@ -1443,49 +1091,7 @@
         },
         {
           "type": "text",
-          "value": ") has parenthesis, no hashtags, no period, and a space between two ids."
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one is all lowercase "
-        },
-        {
-          "type": "text",
-          "value": "gcn circ "
-        },
-        {
-          "type": "text",
-          "value": "123",
-          "data": {
-            "class": "gcn-circular",
-            "value": 123
-          }
-        },
-        {
-          "type": "text",
-          "value": ", "
-        },
-        {
-          "type": "text",
-          "value": "456",
-          "data": {
-            "class": "gcn-circular",
-            "value": 456
-          }
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
-        {
-          "type": "text",
-          "value": "This one has some spacing issues and a hashtag "
+          "value": ")\n"
         },
         {
           "type": "text",
@@ -1498,15 +1104,10 @@
             "class": "gcn-circular",
             "value": 123
           }
-        }
-      ]
-    },
-    {
-      "type": "paragraph",
-      "children": [
+        },
         {
           "type": "text",
-          "value": "This one just has spacing issues "
+          "value": "\n"
         },
         {
           "type": "text",
@@ -1519,10 +1120,6 @@
             "class": "gcn-circular",
             "value": 123
           }
-        },
-        {
-          "type": "text",
-          "value": "."
         }
       ]
     }
