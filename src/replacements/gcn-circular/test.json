@@ -209,6 +209,919 @@
           "value": "This is not a Circular: http://gcn.gsfc.nasa.gov/gcn/other/971227.gcn3"
         }
       ]
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "text",
+          "value": "All of these minor variations with parentheses, octothorpes, character casing, and periods, and different conjunctions are also supported:\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circ. "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circ. #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN circ. #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circ "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN circ "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ. "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ. #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ. #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circular "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circular #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circular "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circular #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circs. "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circs #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", #"
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circs #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", #"
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ. "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", #"
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN Circ "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs. "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", #"
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": ", "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs. "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " and #"
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " and "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs. "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN circs #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " #"
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n("
+        },
+        {
+          "type": "text",
+          "value": "GCN circs "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": " "
+        },
+        {
+          "type": "text",
+          "value": "456",
+          "data": {
+            "class": "gcn-circular",
+            "value": 456
+          }
+        },
+        {
+          "type": "text",
+          "value": ")\n"
+        },
+        {
+          "type": "text",
+          "value": "GCN #"
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        },
+        {
+          "type": "text",
+          "value": "\n"
+        },
+        {
+          "type": "text",
+          "value": "gcn "
+        },
+        {
+          "type": "text",
+          "value": "123",
+          "data": {
+            "class": "gcn-circular",
+            "value": 123
+          }
+        }
+      ]
     }
   ]
 }
