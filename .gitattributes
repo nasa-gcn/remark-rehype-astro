@@ -1,2 +1,3 @@
+src/replacements/*/*.md -text
 src/replacements/*/*.json -text
 src/replacements/*/*.html -text
