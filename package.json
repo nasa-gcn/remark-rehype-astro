@@ -32,7 +32,7 @@
   ],
   "dependencies": {
     "hast-util-find-and-replace": "^5.0.0",
-    "hastscript": "^8.0.0",
+    "hastscript": "^9.0.0",
     "mdast-util-find-and-replace": "^3.0.0"
   },
   "devDependencies": {
