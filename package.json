@@ -46,7 +46,7 @@
     "cross-env": "^7.0.3",
     "esbuild": "^0.23.0",
     "eslint": "^8.31.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-jest": "^27.2.1",
     "glob": "^10.3.4",
     "husky": "^9.1.0",
