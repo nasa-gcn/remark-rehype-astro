@@ -60,7 +60,7 @@
     "remark-rehype": "^10.1.0",
     "ts-jest": "^29.1.1",
     "typescript": "^5.2.2",
-    "unified": "^10.0.0",
+    "unified": "^11.0.5",
     "unist-util-remove-position": "^5.0.0"
   },
   "engines": {
