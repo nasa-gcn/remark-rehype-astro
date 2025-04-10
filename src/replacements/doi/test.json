@@ -81,6 +81,18 @@
             "class": "doi",
             "value": "10.1000/foo.bar"
           }
+        },
+        {
+          "type": "text",
+          "value": " or "
+        },
+        {
+          "type": "text",
+          "value": "https://doi.org/10.1051/aas:2000214",
+          "data": {
+            "class": "doi",
+            "value": "10.1051/aas:2000214"
+          }
         }
       ]
     },
