@@ -36,18 +36,13 @@
     "mdast-util-find-and-replace": "^3.0.0"
   },
   "devDependencies": {
-    "@nasa-gcn/eslint-config-gitignore": "^0.0.2",
-    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@nasa-gcn/rcfiles": "^0.1.0",
     "@tsconfig/node20": "^20.1.5",
     "@types/jest": "^29.2.5",
     "@types/mdast": "^4.0.0",
-    "@typescript-eslint/eslint-plugin": "^7.16.1",
-    "@typescript-eslint/parser": "^7.16.1",
     "cross-env": "^7.0.3",
     "esbuild": "^0.25.0",
     "eslint": "^8.57.0",
-    "eslint-config-prettier": "^10.1.1",
-    "eslint-plugin-jest": "^28.6.0",
     "glob": "^11.0.1",
     "husky": "^9.1.0",
     "jest": "^29.6.4",
@@ -68,21 +63,6 @@
   },
   "type": "module",
   "sideEffects": false,
-  "prettier": {
-    "plugins": [
-      "@trivago/prettier-plugin-sort-imports"
-    ],
-    "importOrder": [
-      "^[@a-zA-Z].*(?<!(?:css|gif|json|png|svg))$",
-      "^[.~/].*(?<!(?:css|gif|json|png|svg))$",
-      ""
-    ],
-    "importOrderSeparation": true,
-    "importOrderSortSpecifiers": true,
-    "semi": false,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "jest": {
     "preset": "ts-jest/presets/default-esm",
     "collectCoverage": true,
@@ -92,41 +72,6 @@
     ],
     "moduleNameMapper": {
       "^(\\.{1,2}/.*)\\.js$": "$1"
-    }
-  },
-  "eslintConfig": {
-    "env": {
-      "es2019": true,
-      "node": true
-    },
-    "extends": [
-      "eslint:recommended",
-      "@nasa-gcn/eslint-config-gitignore",
-      "prettier"
-    ],
-    "overrides": [
-      {
-        "files": "*.ts",
-        "extends": [
-          "plugin:@typescript-eslint/recommended"
-        ],
-        "parser": "@typescript-eslint/parser",
-        "plugins": [
-          "@typescript-eslint"
-        ]
-      },
-      {
-        "files": "**/test.ts",
-        "plugins": [
-          "jest"
-        ],
-        "extends": [
-          "plugin:jest/recommended"
-        ]
-      }
-    ],
-    "parserOptions": {
-      "sourceType": "module"
     }
   }
 }
