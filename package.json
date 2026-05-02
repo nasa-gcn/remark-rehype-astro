@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "github:nasa-gcn/remark-rehype-astro"
+    "url": "git+https://github.com/nasa-gcn/remark-rehype-astro.git"
   },
   "license": "Apache-2.0",
   "keywords": [],
